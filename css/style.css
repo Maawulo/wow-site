@@ -152,45 +152,45 @@ body {
   overflow: hidden; }
 
 .main__cata-classic {
-  background-image: url(/media/background/cata-classic.avif); }
+  background-image: url(../media/background/cata-classic.avif); }
 
 .main__dragonflight-update {
-  background-image: url(/media/background/df-update.avif); }
+  background-image: url(../media/background/df-update.avif); }
 
 .main__blizzcon-sale {
-  background-image: url(/media/background/blizzcon.avif); }
+  background-image: url(../media/background/blizzcon.avif); }
 
 .main__classic-hc {
-  background-image: url(/media/background/hardcore.avif); }
+  background-image: url(../media/background/hardcore.avif); }
 
 .main__trading-post {
-  background-image: url(/media/background/tradingpost.avif); }
+  background-image: url(../media/background/tradingpost.avif); }
 
 .main__prime-gaming {
-  background-image: url(/media/background/primegaming.avif); }
+  background-image: url(../media/background/primegaming.avif); }
 
 .main__12month-promo {
-  background-image: url(/media/background/promo.avif); }
+  background-image: url(../media/background/promo.avif); }
 
 .main__wotlk-classic {
-  background-image: url(/media/background/wotlk.avif); }
+  background-image: url(../media/background/wotlk.avif); }
 
 .main__warcraft-rumble {
-  background-image: url(/media/background/rumble.avif); }
+  background-image: url(../media/background/rumble.avif); }
 
 .main__raf {
-  background-image: url(/media/background/raf.avif); }
+  background-image: url(../media/background/raf.avif); }
 
 .main__df-wait {
-  background-image: url(/media/background/dfwait.avif); }
+  background-image: url(../media/background/dfwait.avif); }
 
 .main__socials {
-  background-image: url(/media/background/socialsBG.jpg);
+  background-image: url(../media/background/socialsBG.jpg);
   background-position: top;
   background-size: cover; }
 
 .main__footer {
-  background-image: url(/media/background/footerBG.jpg); }
+  background-image: url(../media/background/footerBG.jpg); }
 
 .bg-video {
   position: absolute;
