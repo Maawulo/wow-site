@@ -1,0 +1,205 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%;
+  background-color: black; }
+
+body {
+  box-sizing: border-box; }
+
+.navigation {
+  width: 98%;
+  height: 72px;
+  margin: 0 auto;
+  padding-right: 10px;
+  background-color: rgba(60, 42, 41, 0.8);
+  border-radius: 10px;
+  position: fixed;
+  top: 15px;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  color: white;
+  font-family: Poppins, Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  z-index: 1000; }
+  .navigation__blizzard-logo {
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 100%;
+    width: 148px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .navigation__link {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    transition: all 0.2s; }
+    .navigation__link:hover {
+      filter: brightness(120%); }
+    .navigation__link-img {
+      width: 50%;
+      position: relative;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+  .navigation__wow-logo {
+    height: 100%;
+    margin-left: 10px; }
+    .navigation__wow-logo-image {
+      width: 90%;
+      height: 90%;
+      object-fit: contain;
+      transition: all 0.2s;
+      cursor: pointer;
+      position: relative;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+      .navigation__wow-logo-image:hover {
+        filter: brightness(120%); }
+  .navigation__menu-buttons {
+    margin-left: 0rem;
+    display: flex;
+    margin-right: auto; }
+  .navigation__menu-text {
+    border-radius: 10px;
+    padding: 1.3rem 1.5rem;
+    cursor: pointer;
+    transition: all 0.3s; }
+    .navigation__menu-text:hover {
+      background-color: rgba(255, 255, 255, 0.065); }
+  .navigation .scrolldown-icon {
+    color: grey;
+    font-size: 13px;
+    position: relative;
+    top: -2px; }
+  .navigation__account-buttons {
+    display: flex;
+    gap: 1.5rem;
+    cursor: pointer; }
+    .navigation__account-buttons > *:not(.navigation__search-button) {
+      display: flex;
+      align-items: center;
+      padding: 10px 20px; }
+  .navigation__search-button {
+    width: 48px;
+    height: 48px;
+    border-radius: 10px;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .navigation__search-button:hover {
+      background-color: rgba(255, 255, 255, 0.065); }
+  .navigation .search-icon,
+  .navigation .account-icon {
+    width: 2.3rem;
+    height: 2.3rem;
+    fill: #9f9594; }
+  .navigation__account-button {
+    border-radius: 10px;
+    transition: all 0.3s;
+    position: relative; }
+    .navigation__account-button:hover {
+      background-color: rgba(255, 255, 255, 0.065); }
+    .navigation__account-button .account-icon {
+      position: relative;
+      left: -8px; }
+    .navigation__account-button .scrolldown-icon {
+      position: relative;
+      right: -8px; }
+  .navigation__try-free-button {
+    border-radius: 10px;
+    transition: all 0.3s;
+    background-color: black; }
+    .navigation__try-free-button:hover {
+      background-color: rgba(0, 0, 0, 0.6); }
+  .navigation__subscribe-button {
+    border-radius: 10px;
+    transition: all 0.3s;
+    background-color: #aa2409; }
+    .navigation__subscribe-button:hover {
+      background-color: #b23300; }
+
+.header {
+  background-color: black;
+  height: 12.85vh; }
+
+.main {
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 5px;
+  grid-template-rows: 100vh repeat(13, 48rem) 86px 53rem;
+  grid-template-areas: "announcement announcement" "cata-classic cata-classic" "df-update df-update" "blizzcon blizzcon" "classic-hc classic-hc" "new-player returning-player" "trading-post trading-post" "prime-gaming prime-gaming" "sub-promo sub-promo" "wotlk wotlk" "rumble rumble" "df-patch latest-update" "raf raf" "df-wait df-wait" "socials socials" "footer footer"; }
+  .main > * {
+    font-size: 90px; }
+  .main > *:not(.main__new):not(.main__returning):not(.main__df-patch):not(.main__latest-updates) {
+    grid-column: 1 / -1; }
+
+.main > * {
+  background-position: center;
+  overflow: hidden; }
+
+.main__cata-classic {
+  background-image: url(/media/background/cata-classic.avif); }
+
+.main__dragonflight-update {
+  background-image: url(/media/background/df-update.avif); }
+
+.main__blizzcon-sale {
+  background-image: url(/media/background/blizzcon.avif); }
+
+.main__classic-hc {
+  background-image: url(/media/background/hardcore.avif); }
+
+.main__trading-post {
+  background-image: url(/media/background/tradingpost.avif); }
+
+.main__prime-gaming {
+  background-image: url(/media/background/primegaming.avif); }
+
+.main__12month-promo {
+  background-image: url(/media/background/promo.avif); }
+
+.main__wotlk-classic {
+  background-image: url(/media/background/wotlk.avif); }
+
+.main__warcraft-rumble {
+  background-image: url(/media/background/rumble.avif); }
+
+.main__raf {
+  background-image: url(/media/background/raf.avif); }
+
+.main__df-wait {
+  background-image: url(/media/background/dfwait.avif); }
+
+.main__socials {
+  background-image: url(/media/background/socialsBG.jpg);
+  background-position: top;
+  background-size: cover; }
+
+.main__footer {
+  background-image: url(/media/background/footerBG.jpg); }
+
+.bg-video {
+  position: absolute;
+  top: -180px;
+  left: 0;
+  display: block;
+  height: 140vh;
+  object-fit: cover;
+  z-index: -1; }
+
+body {
+  overflow-x: hidden; }

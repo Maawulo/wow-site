@@ -1,0 +1,64 @@
+.main {
+    & > * {
+        background-position: center;
+        overflow: hidden;
+    }
+
+    &__cata-classic {
+        background-image: url(/media/background/cata-classic.avif);
+    }
+    &__dragonflight-update {
+        background-image: url(/media/background/df-update.avif);
+    }
+    &__blizzcon-sale {
+        background-image: url(/media/background/blizzcon.avif);
+    }
+    &__classic-hc {
+        background-image: url(/media/background/hardcore.avif);
+    }
+    &__trading-post {
+        background-image: url(/media/background/tradingpost.avif);
+    }
+    &__prime-gaming {
+        background-image: url(/media/background/primegaming.avif);
+    }
+    &__12month-promo {
+        background-image: url(/media/background/promo.avif);
+    }
+    &__wotlk-classic {
+        background-image: url(/media/background/wotlk.avif);
+    }
+    &__warcraft-rumble {
+        background-image: url(/media/background/rumble.avif);
+    }
+    &__raf {
+        background-image: url(/media/background/raf.avif);
+    }
+    &__df-wait {
+        background-image: url(/media/background/dfwait.avif);
+    }
+    &__socials {
+        background-image: url(/media/background/socialsBG.jpg);
+        background-position: top;
+        background-size: cover;
+    }
+    &__footer {
+        background-image: url(/media/background/footerBG.jpg);
+    }
+}
+
+.bg-video {
+    position: absolute;
+    top: -180px;
+    left: 0;
+    display: block;
+    height: 140vh;
+
+    object-fit: cover;
+    z-index: -1;
+    // transform: scale(1.245);
+}
+
+body {
+    overflow-x: hidden;
+}

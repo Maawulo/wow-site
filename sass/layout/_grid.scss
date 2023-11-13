@@ -1,0 +1,51 @@
+.main {
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5px;
+    grid-template-rows: 100vh repeat(13, 48rem) 86px 53rem;
+
+    grid-template-areas:
+        "announcement announcement"
+        "cata-classic cata-classic"
+        "df-update df-update"
+        "blizzcon blizzcon"
+        "classic-hc classic-hc"
+        "new-player returning-player"
+        "trading-post trading-post"
+        "prime-gaming prime-gaming"
+        "sub-promo sub-promo"
+        "wotlk wotlk"
+        "rumble rumble"
+        "df-patch latest-update"
+        "raf raf"
+        "df-wait df-wait"
+        "socials socials"
+        "footer footer";
+
+    //TEST
+    & > * {
+        // background-color: orangered;
+        font-size: 90px;
+    }
+
+    & > *:not(.main__new):not(.main__returning):not(.main__df-patch):not(.main__latest-updates) {
+        grid-column: 1 / -1;
+    }
+
+    // &__announcement {
+    //     grid-area: announcement;
+    // }
+    // &__cata-classic {
+    //     grid-area: cata-classic;
+    // }
+    // &__dragonflight-update {
+    //     grid-area: df-update;
+    // }
+    // &__blizzcon-sale {
+    //     grid-area: blizzcon;
+    // }
+    // &__classic-hc {
+    //     grid-area: classic-hc;
+    // }
+}
